@@ -1,0 +1,99 @@
+<config>
+    <tabs>
+        <gaugeinteractive_all translate="label">
+            <label>Gauge Interactive</label>
+            <sort_order>9999</sort_order>
+        </gaugeinteractive_all>
+    </tabs>
+    <sections>
+        <redis>
+            <label>Redis</label>
+            <tab>gaugeinteractive_all</tab>
+            <sort_order>10000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <settings translate="label">
+                    <label>Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <enabled>
+                            <label>Extension Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>enable extension</comment>
+                        </enabled>
+                    </fields>
+                </settings>
+                <server>
+                    <label>Redis Server Info</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <instances>
+                            <label>Redis Instance(s)</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>ex: host,port,db; 127.0.0.1,6379,0;</comment>
+                        </instances>
+                    </fields>
+                </server>
+                <!--<fpc>-->
+                    <!--<label>Full Page Cache</label>-->
+                    <!--<frontend_type>text</frontend_type>-->
+                    <!--<sort_order>3</sort_order>-->
+                    <!--<show_in_default>1</show_in_default>-->
+                    <!--<show_in_website>1</show_in_website>-->
+                    <!--<show_in_store>1</show_in_store>-->
+                    <!--<expanded>1</expanded>-->
+                    <!--<fields>-->
+                        <!--<host>-->
+                            <!--<label>Redis Host</label>-->
+                            <!--<frontend_type>text</frontend_type>-->
+                            <!--<sort_order>10</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                            <!--<comment>ex: 127.0.0.1</comment>-->
+                        <!--</host>-->
+                        <!--<port>-->
+                            <!--<label>Port</label>-->
+                            <!--<frontend_type>text</frontend_type>-->
+                            <!--<sort_order>15</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                            <!--<comment>ex: 6379</comment>-->
+                        <!--</port>-->
+                        <!--<db>-->
+                            <!--<label>DB</label>-->
+                            <!--<frontend_type>text</frontend_type>-->
+                            <!--<sort_order>20</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                            <!--<comment>ex: 1</comment>-->
+                        <!--</db>-->
+                    <!--</fields>-->
+                <!--</fpc>-->
+            </groups>
+        </redis>
+    </sections>
+</config>

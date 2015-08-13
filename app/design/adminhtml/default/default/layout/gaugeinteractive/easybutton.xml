@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_cache_index>
+        <reference name="content">
+            <block type="adminhtml/cache_additional" name="cache.additional.gaugeinteractive"
+                   template="gaugeinteractive/system/cache/additional.phtml" after="cache.additional"></block>
+            <block type="adminhtml/cache_additional" name="cache.additional.easybutton"
+                   template="gaugeinteractive/system/cache/easybutton.phtml"
+                   after="cache.additional.gaugeinteractive"></block>
+        </reference>
+    </adminhtml_cache_index>
+</layout>
+

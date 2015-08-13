@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <GaugeInteractive_Cloudflare>
+            <version>1.0.0</version>
+        </GaugeInteractive_Cloudflare>
+    </modules>
+    <global>
+        <models>
+            <gaugeinteractive_cloudflare>
+                <class>GaugeInteractive_Cloudflare_Model</class>
+            </gaugeinteractive_cloudflare>
+        </models>
+        <blocks>
+            <gaugeinteractive_cloudflare>
+                <class>GaugeInteractive_Cloudflare_Block</class>
+            </gaugeinteractive_cloudflare>
+        </blocks>
+        <helpers>
+            <gaugeinteractive_cloudflare>
+                <class>GaugeInteractive_Cloudflare_Helper</class>
+            </gaugeinteractive_cloudflare>
+        </helpers>
+        <!--<cache>-->
+            <!--<types>-->
+                <!--<cloudflare translate="label,description" module="cloudflare">-->
+                    <!--<label><![CDATA[Cloudflare]]></label>-->
+                    <!--<description><![CDATA[Cloudflare Cache]]></description>-->
+                    <!--<tags><![CDATA[CLOUDFLARE]]></tags>-->
+                <!--</cloudflare>-->
+            <!--</types>-->
+        <!--</cache>-->
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <cloudflare>
+                    <file>gaugeinteractive/cloudflare.xml</file>
+                </cloudflare>
+            </updates>
+        </layout>
+    </adminhtml>
+    <admin>
+        <routers>
+            <gaugeinteractive_cloudflare>
+                <use>admin</use>
+                <args>
+                    <module>GaugeInteractive_Cloudflare</module>
+                    <frontName>gaugeinteractive_cloudflare</frontName>
+                </args>
+            </gaugeinteractive_cloudflare>
+        </routers>
+    </admin>
+</config>

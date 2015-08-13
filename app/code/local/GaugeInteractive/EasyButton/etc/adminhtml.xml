@@ -1,0 +1,41 @@
+<config>
+    <menu>
+        <system>
+            <children>
+                <gaugeinteractive_extensions translate="title">
+                    <title>GaugeInteractive Extensions</title>
+                    <sort_order>1</sort_order>
+                    <children>
+                        <easybutton translate="title">
+                            <title>Easy Button Configuration</title>
+                            <sort_order>120</sort_order>
+                            <action>adminhtml/system_config/edit/section/easybutton</action>
+                        </easybutton>
+                    </children>
+                </gaugeinteractive_extensions>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <easybutton>
+                                        <title>Gauge Interactive - Easy Button Configuration</title>
+                                    </easybutton>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

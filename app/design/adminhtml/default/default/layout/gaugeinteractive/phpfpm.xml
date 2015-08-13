@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_cache_index>
+        <reference name="content">
+            <block type="adminhtml/cache_additional" name="cache.additional.phpfpm" template="gaugeinteractive/system/cache/phpfpm.phtml" after="cache.additional.easybutton"></block>
+        </reference>
+    </adminhtml_cache_index>
+</layout>

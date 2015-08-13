@@ -1,0 +1,41 @@
+<config>
+    <menu>
+        <system>
+            <children>
+                <gaugeinteractive_extensions translate="title">
+                    <title>GaugeInteractive Extensions</title>
+                    <sort_order>1</sort_order>
+                    <children>
+                        <apc translate="title">
+                            <title>APC Configuration</title>
+                            <sort_order>110</sort_order>
+                            <action>adminhtml/system_config/edit/section/apc</action>
+                        </apc>
+                    </children>
+                </gaugeinteractive_extensions>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <apc>
+                                        <title>Gauge Interactive - APC Configuration</title>
+                                    </apc>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

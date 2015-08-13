@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_cache_index>
+        <reference name="content">
+            <block type="adminhtml/cache_additional" name="cache.additional.apc"
+                   template="gaugeinteractive/system/cache/apc.phtml" after="cache.additional.phpfpm"></block>
+        </reference>
+    </adminhtml_cache_index>
+</layout>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_cache_index>
+        <reference name="content">
+            <block type="adminhtml/cache_additional" name="cache.additional.cloudflare"
+                   template="gaugeinteractive/system/cache/cloudflare.phtml" after="cache.additional.redis"></block>
+        </reference>
+    </adminhtml_cache_index>
+</layout>
